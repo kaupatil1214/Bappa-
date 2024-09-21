@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morya Morya</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/index/style.css" />
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <div class="wishCard">
+    <div class="cardFront">
+      <h3 class="happy"> Ganpati Morya Bappa</h3>
+
+      <div class="container">
+
+        <p class="text">गणनायकाय गणदेवताय<br>
+          गणाध्यक्षाय धीमहि||<br>
+          गुणशरीराय गुणमण्डिताय<br>
+          गुणेशानाय धीमहि||<br>
+          गुणातीताय गुणाधीशाय<br>
+          गुणप्रविष्टाय धीमहि||<br>
+          एकदंताय वक्रतुण्डाय<br>
+          गौरीतनयाय धीमहि||<br>
+          गजेशानाय भालचन्द्राय<br>
+          श्रीगणेशाय धीमहि||
+        </p>
+
+      </div>
+    </div>
+    <div class="cardInside">
+      <h3 class="back">Ganpati Bappa morya</h3>
+      <div>
+        <video autoplay controls loop muted height="270" width="245">
+          <source src="/images /ganpati.mp4">
+          </source>
+        </video>
+
+        <audio id="song" src="/images /Ekadantaya vakratundaya.mp3" loop="">
+        </audio>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener('click', () => {
+
+        document.getElementById("song").play();
+
+      });
+      window.addEventListener('dblclick', () => {
+
+        document.getElementById("song").pause();
+
+      });
+    </script>
+
+
+</body>
+
+</html>
