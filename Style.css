@@ -1,0 +1,104 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  background-image: url("/images /ganpati.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+  
+.container{
+  display: inline-block;
+}
+.text{
+  font-size: 19px;
+  letter-spacing: 4px;
+  font-family: cursive;
+  border-right: 15px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s steps(18),
+  cursor 10s step-end infinite alternate;
+}
+/* cursor blinking */
+@keyframes cursor{
+  0%{
+    border-color: transparent}
+}
+/* typing effect*/
+@keyframes typing{
+  from{width:0}
+}
+.wishCard {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 1s;
+}
+
+.wishCard:hover{
+  transform: perspective(2500px) rotate(10deg);
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+    0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+.wishCard:hover .cardFront {
+  transform: rotateY(-160deg);
+}
+
+.birthdayCard:hover .happy {
+  visibility: hidden;
+}
+
+.cardFront {
+  position: relative;
+  background-image: linear-gradient(120deg, #FF5656 0%, #22C9D2 100%);
+  transition: 0.1s;
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+  transform-origin: left;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+    30px 0 50px rgba(0, 0, 0, 0.4);
+  transition: 0.6s;
+}
+
+.happy {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  margin: 30px;
+  background-image: linear-gradient(120deg, #ffd856 0%, #f98c6e 100%);
+  transition: 0.1s;
+}
+
+
+
+.cardInside {
+  position: absolute;
+  background-image: linear-gradient(120deg, #77E332 0%, #8200FF 100%);
+  transition: 0.1s;
+  width: 250px;
+  height: 350px;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+}
+
+.back {
+  text-align: center;
+  font-size: 25px;
+  
+  background-image: url("/images /HD.jpg");
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+    }
